@@ -1,0 +1,273 @@
+/* ------------------------------NAV BAR--------------------------- */
+
+.navbar {
+    backdrop-filter: blur(10px) !important; /* glass effect */
+    background-color: rgba(255, 255, 255, 0.8) !important; /* transparent white */
+    /* border-radius: 16px; */
+}
+
+.navbar .container-fluid {
+  padding: 40px 30px 10px 30px; /* top, right, bottom, left */
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.5rem !important; /* larger than links */
+    color: #889E6D !important;
+}
+
+.navbar-brand:hover {
+    transition: all 0.3s ease;
+    color:#C0CDD9 !important; /* optional: hover matches brand */
+}
+
+.nav-link {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem !important; /* keep same size */
+    color: #889E6D !important; /* keep default bootstrap link color */
+    /* font-weight: 600 !important; */
+}
+
+.nav-link:hover {
+    transition: all 0.3s ease;
+    color: #C0CDD9 !important; /* optional: hover matches brand */
+}
+
+/* ------------------------------HEADER IMAGE--------------------------- */
+.header-image {
+    position: relative;
+    /* transform: translate(0, -250px); */
+    width: 100%;
+    height: 85vh;
+    object-fit: cover; /* Cover area without stretching */
+    object-position: center; /* Center the image */
+}
+
+/* ------------------------------PROJECT SECTION HOME PAGE--------------------------- */
+
+.project-detail {
+    /* display: none; */
+    /* transform: translateY(-250px); */
+    position: relative; 
+    padding: 2%;
+    background: white;
+    z-index: 20;
+}
+
+.project-detail img {
+    width: 100%;
+    height: 900px; /* Fixed height */
+    object-fit: cover;
+    object-position: center;
+    padding: 2%;
+    transition: all 0.3s ease;
+}
+
+.project-detail img:hover{
+    transform: scale(1.03);
+}
+
+.project-detail h4, .project-detail a {
+    font-family: 'Manrope', sans-serif;
+    color: #808181;
+    font-weight: 800;
+    text-decoration: none !important;
+}
+
+.project-detail h4:hover, .project-detail a:hover {
+    font-family: 'Manrope', sans-serif;
+    color: #889E6D;
+    font-weight: 800;
+    text-decoration: none !important;
+}
+
+.project-detail h5 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 0px;
+    margin-bottom: 20px;
+    color: #808181;
+}
+
+/* ------------------------------BRISE LUMIERE--------------------------- */
+
+.project-title {
+    margin-bottom: 50px;
+}
+
+.project-description {
+    display: flex;
+    justify-content: end;
+}
+
+.briselumiere-project, .briselumiere-sections, .aquanexus-gallery {
+    padding: 30px;
+}
+
+.briselumiere-project h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: #808181;
+}
+
+.briselumiere-project h5, .briselumiere-sections h5 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    color: #808181;
+}
+
+.briselumiere-project h6, .briselumiere-sections h6 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #808181;
+}
+
+.briselumiere-project img{
+    width: 100%;
+    height: 770px; /* Fixed height */
+    object-fit: cover; /* keeps aspect ratio while filling */
+    display: block;
+}
+
+.briselumiere-gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps aspect ratio while filling */
+    display: block;
+}
+
+#briselumiere-physicalmodels img{
+    width: 100%;
+    height: 770px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ------------------------------GALLERY--------------------------- */
+
+.gallery-section {
+    padding: 30px;
+    margin-top: 150px;
+}
+
+.gallery-section img{
+    width: 100%;
+    height: 500px; /* Fixed height */
+    object-fit: cover; /* keeps aspect ratio while filling */
+    display: block;
+}
+
+.gallery-section h6 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #808181;
+}
+
+/* =======================ABOUT SECTION ICONS===================== */
+
+
+.mwg_effect000 {
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.mwg_effect000 .medias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+}
+.mwg_effect000 .medias img {
+  width: 10vw;
+  height: 10vw;
+  object-fit: contain;
+  border-radius: 4%;
+  display: block;
+  pointer-events: none;
+  will-change: transform;
+}
+
+
+@media (max-width: 768px) {
+  .mwg_effect000 .header {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .mwg_effect000 .header div:nth-child(2) {
+      display: none;
+  }
+  .mwg_effect000 .medias {
+      gap: 6vw;
+  }
+  .mwg_effect000 .medias img {
+      width: 18vw;
+      height: 18vw;
+  }
+}
+
+/* ------------------------------FOOTER--------------------------- */
+.footer {
+    position: relative;
+    padding: 2%;
+    background: white;
+    z-index: 20;
+    margin-bottom: 50px;
+    /* transform: translateY(-100px); */
+}
+
+/* LOGO IMAGE STYLING */
+.logo-image {
+    max-width: 200px;
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    /* padding-left: 2%; */
+}
+
+/* FOOTER LINKS STYLING */
+.footer-links h4 {
+    font-family: "Manrope", sans-serif;
+    /* font-weight: 600; */
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    color: #889E6D; /* Ensure text is black by default */
+}
+
+/* LINK STYLING */
+.footer-link {
+    color: #889E6D; /* Black by default */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #C0CDD9; /* Light gray on hover */
+    text-decoration: none;
+}
+
+/* Right alignment for larger screens */
+@media (min-width: 768px) {
+    .footer-links {
+        text-align: right;
+        padding-right: 2%;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .logo-image {
+        margin-bottom: 1.5rem;
+    }
+    .footer-links {
+        text-align: center;
+    }
+    .row.align-items-end {
+        align-items: flex-start !important; /* Override for mobile */
+    }
+}
