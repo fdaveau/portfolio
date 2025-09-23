@@ -1,38 +1,103 @@
 /* ------------------------------NAV BAR--------------------------- */
 
 .navbar {
-    backdrop-filter: blur(10px) !important; /* glass effect */
-    background-color: rgba(255, 255, 255, 0.8) !important; /* transparent white */
-    /* border-radius: 16px; */
-}
+            backdrop-filter: blur(10px) !important;
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.navbar .container-fluid {
-  padding: 40px 30px 10px 30px; /* top, right, bottom, left */
-}
+        .navbar .container-fluid {
+            padding: 40px 30px 10px 30px;
+        }
 
-.navbar-brand {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 2.5rem !important; /* larger than links */
-    color: #889E6D !important;
-}
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 2.5rem !important;
+            color: #889E6D !important;
+        }
 
-.navbar-brand:hover {
-    transition: all 0.3s ease;
-    color:#C0CDD9 !important; /* optional: hover matches brand */
-}
+        .navbar-brand:hover {
+            transition: all 0.3s ease;
+            color: #C0CDD9 !important;
+        }
 
-.nav-link {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1rem !important; /* keep same size */
-    color: #889E6D !important; /* keep default bootstrap link color */
-    /* font-weight: 600 !important; */
-}
+        .nav-link {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1rem !important;
+            color: #889E6D !important;
+            padding: 0.75rem 1rem !important;
+        }
 
-.nav-link:hover {
-    transition: all 0.3s ease;
-    color: #C0CDD9 !important; /* optional: hover matches brand */
-}
+        .nav-link:hover {
+            transition: all 0.3s ease;
+            color: #C0CDD9 !important;
+        }
+
+        .navbar-toggler {
+            border: none !important;
+            padding: 0.25rem 0.5rem;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23889E6D' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        }
+
+        /* Mobile specific styles */
+        @media (max-width: 991.98px) {
+            .navbar .container-fluid {
+                padding: 20px 15px 10px 15px;
+            }
+
+            .navbar-brand {
+                font-size: 2rem !important;
+            }
+
+            .navbar-collapse {
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid rgba(136, 158, 109, 0.2);
+            }
+
+            .navbar-collapse.show {
+                display: block !important;
+            }
+
+            .navbar-collapse:not(.show) {
+                display: none !important;
+            }
+
+            .nav-link {
+                padding: 0.75rem 0 !important;
+                text-align: left;
+            }
+
+            .navbar-nav {
+                width: 100%;
+            }
+
+            .nav-item {
+                border-bottom: 1px solid rgba(136, 158, 109, 0.1);
+            }
+
+            .nav-item:last-child {
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 1.75rem !important;
+            }
+
+            .navbar .container-fluid {
+                padding: 15px 10px 10px 10px;
+            }
+        }
 
 /* ------------------------------HEADER IMAGE--------------------------- */
 .header-image {
@@ -57,7 +122,7 @@
 
 .project-detail img {
     width: 100%;
-    height: 900px; /* Fixed height */
+    height: auto; /* Fixed height */
     object-fit: cover;
     object-position: center;
     padding: 2%;
@@ -87,6 +152,21 @@
     font-weight: 0px;
     margin-bottom: 20px;
     color: #808181;
+}
+
+@media (max-width: 991.98px) {
+    .project-detail img {
+        width: 100%;
+        height: 300px; /* Fixed height */
+        object-fit: cover;
+        object-position: center;
+        padding: 2%;
+        transition: all 0.3s ease;
+    }
+
+    .project-detail img:hover{
+        transform: scale(1);
+    }
 }
 
 /* ------------------------------BRISE LUMIERE--------------------------- */
@@ -125,7 +205,7 @@
 
 .briselumiere-project img{
     width: 100%;
-    height: 770px; /* Fixed height */
+    height: auto; /* Fixed height */
     object-fit: cover; /* keeps aspect ratio while filling */
     display: block;
 }
@@ -142,6 +222,23 @@
     height: 770px;
     object-fit: cover;
     display: block;
+}
+
+@media (max-width: 991.98px) {
+    .briselumiere-project img{
+        width: 100%;
+        height: 270px; /* Fixed height */
+        object-fit: cover; /* keeps aspect ratio while filling */
+        display: block;
+    }
+
+    #briselumiere-physicalmodels{
+        margin-top: 30px
+    }
+
+    #briselumiere-physicalmodels img{
+        height: auto;
+    }
 }
 
 /* ------------------------------GALLERY--------------------------- */
@@ -163,6 +260,71 @@
     font-size: 17px;
     margin-bottom: 20px;
     color: #808181;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991.98px) {
+    .gallery-section {
+        padding: 20px 15px;
+        margin-top: 100px;
+    }
+
+    .gallery-section img {
+        height: 350px;
+    }
+
+    .gallery-section h6 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .gallery-item {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .gallery-section {
+        padding: 15px 10px;
+        margin-top: 80px;
+    }
+
+    .gallery-section img {
+        height: 280px;
+    }
+
+    .gallery-section h6 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .gallery-item {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-section {
+        padding: 10px 5px;
+        margin-top: 60px;
+    }
+
+    .gallery-section img {
+        height: 400px;
+    }
+
+    .gallery-section h6 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .gallery-title {
+        margin-top: 40px;
+    }
+
+    .gallery-item {
+        margin-bottom: 35px;
+    }
 }
 
 /* =======================ABOUT SECTION ICONS===================== */
@@ -208,6 +370,12 @@
       width: 18vw;
       height: 18vw;
   }
+}
+
+@media (max-width: 991.98px) {
+    .project-detail h4, .project-detail h5{
+        padding: 2%;
+    }
 }
 
 /* ------------------------------FOOTER--------------------------- */
