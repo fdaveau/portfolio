@@ -253,12 +253,12 @@
     height: 500px; /* Fixed height */
     object-fit: cover; /* keeps aspect ratio while filling */
     display: block;
+    margin-top: 20px;
 }
 
 .gallery-section h6 {
     font-family: 'Manrope', sans-serif;
     font-size: 17px;
-    margin-bottom: 20px;
     color: #808181;
 }
 
@@ -439,3 +439,4 @@
         align-items: flex-start !important; /* Override for mobile */
     }
 }
+
