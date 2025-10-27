@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- favicon -->
+        <link rel="icon" href="favicon.ico" sizes="32x32" type="image/png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farah Daveau</title>
+        <link rel="stylesheet" href="styles3-home.css">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+         <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">FARAH DAVEAU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="projects.html">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    
+    <!-- HERO SECTION -->
+    <div class="project-header">
+        <h1>PROJECTS</h1>
+        <p>My work lies at the intersection of <strong>architectural design and digital UI/UX</strong>. I use a leverage a variety of digital and physical ephemera to craft experiences which blend design cultures and technology.</p>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <!-- Brise Lumiere -->
+        <a href="briselumiere.html">
+        <div class="project-card">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-images project-img-left">
+                        <img src="briselumiere-rendering1.jpg" alt="Brise Lumiere Exterior">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-images project-img-right">
+                        <img src="RENDERING INTERIOR 1.jpg" alt="Brise Lumiere Interior">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-content">
+                        <h2>BRISE LUMIERE</h2>
+                        <p class="project-subtitle">Library Design Boston, MA</p>
+                        <div class="project-tags">
+                            <span class="tag">Intervention Architecture</span>
+                            <span class="tag">Structural Performance</span>
+                            <span class="tag">Sustainability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+
+        <!-- Ciphering Materiality -->
+        <a href="cipheringmateriality.html">
+        <div class="project-card">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-images project-img-left">
+                        <img src="cipheringmateriality1.jpg" alt="Ciphering Materiality 1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-images project-img-right">
+                        <img src="cipheringmateriality2.jpg" alt="Ciphering Materiality 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-content">
+                        <h2>CIPHERING MATERIALITY</h2>
+                        <p class="project-subtitle">Inspired by Brickmakers in Nashik, India</p>
+                        <div class="project-tags">
+                            <span class="tag">Materiality</span>
+                            <span class="tag">Heritage Conservation</span>
+                            <span class="tag">Sustainability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+
+        <!-- Aqua Nexus -->
+        <a href="aquanexus.html">
+        <div class="project-card">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-images project-img-left">
+                        <img src="aquanexus-rendering1.png" alt="Ciphering Materiality 1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-images project-img-right">
+                        <img src="aquanexus-rendering4.png" alt="Ciphering Materiality 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-content">
+                        <h2>AQUA NEXUS</h2>
+                        <p class="project-subtitle">Olympic Stadium, Pittsburgh, PA</p>
+                        <div class="project-tags">
+                            <span class="tag">System Architecture Narrative</span>
+                            <span class="tag">Architectural Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+
+        <!-- Sheraden Website -->
+        <a href="sheradenwebsite.html">
+        <div class="project-card">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-images project-img-left">
+                        <img src="SCC 1.png" alt="Phone">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-images project-img-right">
+                        <img src="SCC 2.png" alt="Laptop">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-content">
+                        <h2>SHERADEN WEBSITE</h2>
+                        <p class="project-subtitle">Client: Sheraden Community Council, Pittsburgh, PA</p>
+                        <div class="project-tags">
+                            <span class="tag">Website</span>
+                            <span class="tag">Mobile</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+
+        <!-- Architecture Internships
+        <div class="project-card">
+            <div class="project-images">
+                <div class="project-img-left">
+                    <img src="https://via.placeholder.com/600x400/e8763a/e8763a" alt="Avantpropos Logo">
+                </div>
+                <div class="project-img-right">
+                    <img src="https://via.placeholder.com/600x400/888888/888888" alt="Veritas Model">
+                </div>
+            </div>
+            <div class="project-content">
+                <h2>ARCHITECTURE INTERNSHIPS</h2>
+                <p class="project-subtitle">Avantpropos Architectes, Lille, France<br>Veritas Design Group, Kuala Lumpur, Malaysia</p>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- FOOTER -->
+        <div class="footer container-fluid py-4">
+            <div class="row align-items-end"> <!-- Changed to align-items-end -->
+                <div class="col-md-6 text-center text-md-start">
+                    <img src="Resume-Logo.png" alt="resume" class="logo-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-links d-flex flex-column h-100 justify-content-end"> <!-- Added flex classes -->
+                        <h4><a href="https://www.linkedin.com/in/farah-daveau/" class="footer-link">linkedin</a></h4>
+                        <h4><a href="https://www.instagram.com/designsby.farah/" class="footer-link">instagram</a></h4>
+                        <h4>Custom encoded html / css / javascript</h4>
+                        <h4>© Farah Daveau</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
