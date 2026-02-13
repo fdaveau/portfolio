@@ -23,7 +23,7 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">FARAH DAVEAU</a>
+                <a class="navbar-brand" href="index.html"><img src="Resume-Logo.png" alt="FARAH DAVEAU" class="navbar-brand-img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,9 +31,6 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="projects.html">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">GALLERY</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="about.html">ABOUT</a>
@@ -49,7 +46,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h3>BRISE LUMIERE</h3>
-                        <h5>Library / Architectural Design</h5>
+                        <h5>Library Design</h5>
                         <h5 class="project-title">Boston, MA</h5>
 
                         <h5>Timeline</h5>
@@ -59,6 +56,15 @@
                         <h5>Programs</h5>
                         <h6>Rhino, Vray, Adobe Illustrator, Adobe Photoshop, Physical Fabrication</h6>
 
+                        <!-- <h5><a href="about.html" class="footer-link">About</h5> -->
+                        <h6 class="project-section-links">
+                            <a href="#finalised-drawing-spread" class="briselumiere-section-link">Finalised Drawing Spread ↗</a>
+                            <a href="#funnelling-light" class="briselumiere-section-link">The Concept ↗</a>
+                            <a href="#facade-system" class="briselumiere-section-link">DETAIL: Facade System ↗</a>
+                            <a href="#structural-system" class="briselumiere-section-link">DETAIL: Structural System ↗</a>
+                        </h6>
+                        <h5>Project Brief</h5>
+                        
                         <h6 class="project-description">Brise Lumiere is an experience of movement, light and discovery. Defined by it’s interior tilted walls, the architecture compels patrons into a tactile relationship with space - brushing against surfaces as they pass or settle.
                             As building cores, a network of monumental, structural wooden funnels sculpts the journey of light, channeling it into readings rooms embraced by a lush vegetative entourage. These organic sanctuaries provide an interplay of enclosure and openness, 
                             where shifting daylight filters through the wood, creating moments of warmth and tranquility.
@@ -66,74 +72,83 @@
                             A fusion of monumentality and intimacy, Brise Lumiere reimagines the library as a sensorial landscape, where knowledge is not just stored but discovered through space, shadow and light.</h6>
                     </div>
                     <div class="col-md-8">
-                        <img src="briselumiere-rendering1.jpg" class="img-fluid">
+                        <img src="RENDERING INTERIOR 1.jpg" class="img-fluid lightbox-img" alt="Interior rendering" data-caption="Interior rendering">
+                    </div>
+                    <div class="col-md-3">
+                        <h6> </h6>
+                    </div>
+                    <div class="col-md-6">
+                        
                     </div>
                 </div>
             </div>
          </div>
 
         <!-- GALLERY SECTION -->
-        <div>
             <div class="briselumiere-gallery">
-                <div class="row">
-                    <div class="col-md-12">
-                        <img src="briselumiere-elevation.jpg" class="img-fluid">
+                <div class="row briselumiere-sections" id="finalised-drawing-spread">
+                    <div class="col-md-4">
+                        <h5>FINALISED DRAWING SPREAD</h5>
+                        <h6 class="image-zoom-caption">Tap image to zoom ++</h6>
                     </div>
-                    <div class="col-md-12">
-                        <img src="briselumiere-floorplans.jpg" class="img-fluid">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <img src="briselumiere-elevation.jpg" class="img-fluid lightbox-img" alt="Elevation" data-caption="Facade Elevation">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <img src="briselumiere-floorplans.jpg" class="img-fluid lightbox-img" alt="Floor plans" data-caption="Ground floor plan">
                     </div>
                 </div>
             </div>
-        </div>
 
         <!-- FUNNELLING LIGHT SECTION -->
          <div>
             <div class="briselumiere-sections">
                 <div class="row" id="funnelling-light">
                     <div class="col-md-4">
-                        <h5>Funnelling Light</h5>
+                        <h5>THE CONCEPT Funnelling Light</h5>
+                        <h6 class="image-zoom-caption">Tap image to zoom ++</h6>
                         <h6>Daylight studies explore how the light wells behave with the movement of the sun above 
                             the library throughout the day. How much light filters in determines placement of seating and shelving.</h6>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <img src="briselumiere-daylightrenders.jpg" class="img-fluid">
+                        <img src="briselumiere-daylightrenders.jpg" class="img-fluid lightbox-img" alt="Daylight renders" data-caption="Daylight studies">
                     </div>
                 </div>
-                <div class="row" id="facade-system" style="margin-top: 40px">
-                    <div class="col-md-4">
-                        <h5>Facade System</h5>
+                <div class="row align-items-start" id="facade-system" style="margin-top: 40px;">
+                    <div class="col-md-2">
+                        <h5>DETAIL Facade System</h5>
+                        <h6 class="image-zoom-caption">Tap image to zoom ++</h6>
                         <h6>The library’s curtain wall enclosure is shaded through a champagne toned perforated metal screen. 
                             The screen cladding is directly attached onto the CLT structural system.</h6>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7">
-                        <img src="briselumiere-explodediso.jpg" class="img-fluid">
+                    <div class="col-md-5">
+                        <img src="briselumiere-explodediso.jpg" class="img-fluid lightbox-img" alt="Exploded isometric" data-caption="Facade Tectonics: Exploded isometric" style="max-height: 87vh;">
                     </div>
                     <div class="col-md-5">
-                        <img src="briselumiere-composite.jpg" class="img-fluid">
+                        <img src="briselumiere-composite.jpg" class="img-fluid lightbox-img" alt="Composite" data-caption="Facade Tectonics: Composite" style="max-height: 87vh;">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row align-items-start" id="structural-system">
                     <div class="col-md-4">
-                        <h5>Structural System</h5>
+                        <h5>DETAIL: Structural System</h5>
+                        <h6 class="image-zoom-caption">Tap image to zoom ++</h6>
                         <h6>The library is equipped with a CLT / mass timber structure. Planar and linear elements are constructed into a grid system 
                             effectively integrated with columns, beams and lateral walls to evenly distribute lateral and vertical loads</h6>
                     </div>
                 </div>
-                <div class="row">
-                    <div class=" col-md-12">
-                        <img src="briselumiere-physicalmodel2.jpg" class="img-fluid">
+                <div class="row g-3 align-items-start" style="margin-top: 20px;">
+                    <div class="col-12 col-md-4">
+                        <img src="briselumiere-physicalmodel3.jpg" class="img-fluid w-100 lightbox-img" alt="Physical model" data-caption="Physical model">
                     </div>
-                </div>
-                <div class="row" id="briselumiere-physicalmodels" style="margin-top: 30px">
-                    <div class="col-sm-12 col-md-6">
-                        <img src="briselumiere-physicalmodel1.jpg" class="img-fluid">
+                    <div class="col-12 col-md-4">
+                        <img src="briselumiere-physicalmodel1.jpg" class="img-fluid w-100 lightbox-img" alt="Physical model" data-caption="Physical model">
                     </div>
-                    <div class="col-sm-12 col-md-6">
-                        <img src="briselumiere-physicalmodel3.jpg" class="img-fluid">
+                    <div class="col-12 col-md-4">
+                        <img src="briselumiere-physicalmodel2.jpg" class="img-fluid w-100 lightbox-img" alt="Physical model" data-caption="Physical model">
                     </div>
                 </div>
             </div>
@@ -141,21 +156,28 @@
 
         <!-- FOOTER -->
         <div class="footer container-fluid py-4">
-            <div class="row align-items-end"> <!-- Changed to align-items-end -->
-                <div class="col-md-6 text-center text-md-start">
-                    <img src="Resume-Logo.png" alt="resume" class="logo-image">
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-links d-flex flex-column h-100 justify-content-end"> <!-- Added flex classes -->
-                        <h4><a href="https://www.linkedin.com/in/farah-daveau/" class="footer-link">linkedin</a></h4>
-                        <h4><a href="https://www.instagram.com/designsby.farah/" class="footer-link">instagram</a></h4>
-                        <h4>Custom encoded html / css / javascript</h4>
-                        <h4>© Farah Daveau</h4>
-                    </div>
-                </div>
+            <div class="row footer-row-links align-items-center">
+                <div class="col-3"><h4 class="footer-links mb-0"><a href="https://www.linkedin.com/in/farah-daveau/" class="footer-link">Linkedin ↗</a></h4></div>
+                <div class="col-3"><h4 class="footer-links mb-0"><a href="https://www.instagram.com/designsby.farah/" class="footer-link">Instagram ↗</a></h4></div>
+                <div class="col-3"><h4 class="footer-links mb-0"><a href="index.html" class="footer-link">Back to projects ↗</a></h4></div>
+                <div class="col-3 text-end"><h4 class="footer-links mb-0"><a href="about.html" class="footer-link">About</a></h4></div>
+            </div>
+            <div class="row footer-row-meta align-items-center">
+                <div class="col-6 text-start"><h4 class="footer-links mb-0">Custom encoded html / css / javascript</h4></div>
+                <div class="col-6 text-end"><h4 class="footer-links mb-0">© Farah Daveau</h4></div>
+            </div>
+        </div>
+
+        <!-- Image lightbox -->
+        <div class="lightbox-overlay" id="lightbox" aria-hidden="true">
+            <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+            <div class="lightbox-inner">
+                <img src="" alt="" class="lightbox-image" />
+                <h6 class="lightbox-caption"></h6>
             </div>
         </div>
 
         <script src="script.js"></script>
+        <script src="briselumiere-lightbox.js"></script>
     </body>
 </html>
