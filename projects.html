@@ -19,22 +19,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="no-page-scroll">
 
     <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">FARAH DAVEAU</a>
+                <a class="navbar-brand" href="index.html"><img src="Resume-Logo.png" alt="FARAH DAVEAU" class="navbar-brand-img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="projects.html">PROJECTS</a>
-                    </li>
+                    </li> -->
+                    <!--  -->
                     <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                    <a class="nav-link" href="projects.html">PROJECTS</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="about.html">ABOUT</a>
@@ -45,161 +46,164 @@
         </nav>
     
     <!-- HERO SECTION -->
-    <div class="project-header">
+    <!-- <div class="project-header">
         <h1>PROJECTS</h1>
         <p>My work lies at the intersection of <strong>architectural design and digital UI/UX</strong>. I use a leverage a variety of digital and physical ephemera to craft experiences which blend design cultures and technology.</p>
-    </div>
+    </div> -->
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <!-- Brise Lumiere -->
-        <a href="briselumiere.html">
-        <div class="project-card">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="project-images project-img-left">
-                        <img src="briselumiere-rendering1.jpg" alt="Brise Lumiere Exterior">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-images project-img-right">
-                        <img src="RENDERING INTERIOR 1.jpg" alt="Brise Lumiere Interior">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-content">
-                        <h2>BRISE LUMIERE</h2>
-                        <p class="project-subtitle">Library Design Boston, MA</p>
-                        <div class="project-tags">
-                            <span class="tag">Intervention Architecture</span>
-                            <span class="tag">Structural Performance</span>
-                            <span class="tag">Sustainability</span>
+    <!-- Projects Section (horizontal scroll carousel) -->
+    <section id="projects" class="projects-carousel-section">
+        <div class="projects-carousel-viewport">
+            <div class="projects-carousel-track">
+                <!-- Brise Lumiere -->
+                <a href="briselumiere.html" class="project-card-link">
+                    <div class="project-card carousel-card">
+                        <div class="project-content">
+                            <div class="project-heading-block">
+                                <h2>BRISE LUMIERE</h2>
+                                <p class="project-subtitle">Library Design | Boston, MA</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Facade Tectonics</span>
+                                <span class="tag">Structural Performance</span>
+                                <span class="tag">Sustainability</span>
+                            </div>
+                        </div>
+                        <div class="project-images">
+                            <img src="RENDERING INTERIOR 1.jpg" alt="Brise Lumiere Exterior">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        </a>
-
-        <!-- Ciphering Materiality -->
-        <a href="cipheringmateriality.html">
-        <div class="project-card">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="project-images project-img-left">
-                        <img src="cipheringmateriality1.jpg" alt="Ciphering Materiality 1">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-images project-img-right">
-                        <img src="cipheringmateriality2.jpg" alt="Ciphering Materiality 2">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-content">
-                        <h2>CIPHERING MATERIALITY</h2>
-                        <p class="project-subtitle">Inspired by Brickmakers in Nashik, India</p>
-                        <div class="project-tags">
-                            <span class="tag">Materiality</span>
-                            <span class="tag">Heritage Conservation</span>
-                            <span class="tag">Sustainability</span>
+                </a>
+                
+                <!-- Aqua Nexus -->
+                <a href="aquanexus.html" class="project-card-link">
+                    <div class="project-card carousel-card">
+                        <div class="project-content">
+                            <div class="project-heading-block">
+                                <h2>AQUA NEXUS</h2>
+                                <p class="project-subtitle">Olympic Stadium | Pittsburgh, PA</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">System Architecture Narrative</span>
+                                <span class="tag">Truss System Tectonics</span>
+                            </div>
+                        </div>
+                        <div class="project-images">
+                            <img src="aquanexus-rendering1.png" alt="Aqua Nexus">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        </a>
+                </a>
 
-        <!-- Aqua Nexus -->
-        <a href="aquanexus.html">
-        <div class="project-card">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="project-images project-img-left">
-                        <img src="aquanexus-rendering1.png" alt="Ciphering Materiality 1">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-images project-img-right">
-                        <img src="aquanexus-rendering4.png" alt="Ciphering Materiality 2">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-content">
-                        <h2>AQUA NEXUS</h2>
-                        <p class="project-subtitle">Olympic Stadium, Pittsburgh, PA</p>
-                        <div class="project-tags">
-                            <span class="tag">System Architecture Narrative</span>
-                            <span class="tag">Architectural Design</span>
+                <!-- Ciphering Materiality -->
+                <a href="cipheringmateriality.html" class="project-card-link">
+                    <div class="project-card carousel-card">
+                        <div class="project-content">
+                            <div class="project-heading-block">
+                                <h2>CIPHERING MATERIALITY</h2>
+                                <p class="project-subtitle">Inspired by Brickmakers in Nashik, India</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Material Exploration</span>
+                                <span class="tag">Rammed Earth + Plaster</span>
+                                <span class="tag">Sustainability</span>
+                            </div>
+                        </div>
+                        <div class="project-images">
+                            <img src="cipheringmateriality2.jpg" alt="Ciphering Materiality 1">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        </a>
+                </a>
 
-        <!-- Sheraden Website -->
-        <a href="sheradenwebsite.html">
-        <div class="project-card">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="project-images project-img-left">
-                        <img src="SCC 1.png" alt="Phone">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-images project-img-right">
-                        <img src="SCC 2.png" alt="Laptop">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project-content">
-                        <h2>SHERADEN WEBSITE</h2>
-                        <p class="project-subtitle">Client: Sheraden Community Council, Pittsburgh, PA</p>
-                        <div class="project-tags">
-                            <span class="tag">Website</span>
-                            <span class="tag">Mobile</span>
-                            <span class="tag">Responsive Design</span>
+
+                <!-- Professional Work -->
+                <a href="professionalwork.html" class="project-card-link">
+                    <div class="project-card carousel-card">
+                        <div class="project-content">
+                            <div class="project-heading-block">
+                                <h2>PROFESSIONAL WORK</h2>
+                                <p class="project-subtitle">Avantpropos Architectes + Veritas Design Group</p>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Technical Documentation</span>
+                                <span class="tag">3D Modelling</span>
+                            </div>
+                        </div>
+                        <div class="project-images">
+                            <img src="ProfeshWork 1.jpeg" alt="Professional Work 1">
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
-        </a>
-
-        <!-- Architecture Internships
-        <div class="project-card">
-            <div class="project-images">
-                <div class="project-img-left">
-                    <img src="https://via.placeholder.com/600x400/e8763a/e8763a" alt="Avantpropos Logo">
-                </div>
-                <div class="project-img-right">
-                    <img src="https://via.placeholder.com/600x400/888888/888888" alt="Veritas Model">
-                </div>
-            </div>
-            <div class="project-content">
-                <h2>ARCHITECTURE INTERNSHIPS</h2>
-                <p class="project-subtitle">Avantpropos Architectes, Lille, France<br>Veritas Design Group, Kuala Lumpur, Malaysia</p>
-            </div>
-        </div> -->
     </section>
 
+    <!-- CATEGORY LINKS -->
+    <nav class="category-links">
+        <a href="index.html" class="category-link active">ARCHITECTURE</a>
+        <a href="uiux.html" class="category-link">UI/UX</a>
+        <a href="more.html" class="category-link">MORE</a>
+    </nav>
+
     <!-- FOOTER -->
-        <div class="footer container-fluid py-4">
-            <div class="row align-items-end"> <!-- Changed to align-items-end -->
-                <div class="col-md-6 text-center text-md-start">
-                    <img src="Resume-Logo.png" alt="resume" class="logo-image">
-                </div>
-                <div class="col-md-6">
-                    <div class="footer-links d-flex flex-column h-100 justify-content-end"> <!-- Added flex classes -->
-                        <h4><a href="https://www.linkedin.com/in/farah-daveau/" class="footer-link">linkedin</a></h4>
-                        <h4><a href="https://www.instagram.com/designsby.farah/" class="footer-link">instagram</a></h4>
-                        <h4>Custom encoded html / css / javascript</h4>
-                        <h4>© Farah Daveau</h4>
-                    </div>
+    <!-- <div class="footer container-fluid py-4">
+        <div class="row align-items-end">
+            <div class="col-12">
+                <div class="footer-links d-flex flex-column h-100 justify-content-end">
+                    <h4><a href="https://www.linkedin.com/in/farah-daveau/" class="footer-link">linkedin</a></h4>
+                    <h4><a href="https://www.instagram.com/designsby.farah/" class="footer-link">instagram</a></h4>
+                    <h4>Custom encoded html / css / javascript</h4>
+                    <h4>© Farah Daveau</h4>
                 </div>
             </div>
         </div>
+    </div> -->
+
+        <script>
+            (function() {
+                function initCarousel() {
+                    var section = document.getElementById('projects');
+                    if (!section) return;
+                    var viewport = section.querySelector('.projects-carousel-viewport');
+                    var track = section.querySelector('.projects-carousel-track');
+                    if (!viewport || !track) return;
+        
+                    var translateX = 0;
+                    var maxScroll = 0;
+                    var speed = 1.2;
+        
+                    function updateMaxScroll() {
+                        maxScroll = Math.max(0, track.scrollWidth - viewport.offsetWidth);
+                    }
+        
+                    function onWheel(e) {
+                        if (!viewport.contains(e.target) && !viewport.isSameNode(e.target)) return;
+                        var delta = e.deltaX;
+                        if (e.deltaMode === 1) delta *= 40;
+                        if (e.deltaMode === 2) delta *= 120;
+                        if (delta === 0) return;
+                        updateMaxScroll();
+                        if (maxScroll <= 0) return;
+                        e.preventDefault();
+                        e.stopPropagation();
+                        translateX -= delta * speed;
+                        translateX = Math.min(0, Math.max(-maxScroll, translateX));
+                        track.style.transform = 'translateX(' + translateX + 'px)';
+                    }
+        
+                    window.addEventListener('resize', updateMaxScroll);
+                    updateMaxScroll();
+                    viewport.addEventListener('wheel', onWheel, { passive: false, capture: true });
+        
+                    track.style.transform = 'translateX(0)';
+                }
+        
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', initCarousel);
+                } else {
+                    initCarousel();
+                }
+            })();
+        </script>
     </body>
 
 </html>
