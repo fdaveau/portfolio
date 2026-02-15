@@ -201,7 +201,7 @@
                         if (!e.touches.length || maxScroll <= 0) return;
                         var x = e.touches[0].clientX;
                         var delta = x - touchStartX;
-                        translateX = Math.min(0, Math.max(-maxScroll, touchStartTranslate - delta));
+                        translateX = Math.min(0, Math.max(-maxScroll, touchStartTranslate + delta));
                         track.style.transform = 'translateX(' + translateX + 'px)';
                         if (Math.abs(delta) > 5) e.preventDefault();
                     }
