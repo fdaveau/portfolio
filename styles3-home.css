@@ -191,6 +191,7 @@ body.no-page-scroll .projects-carousel-viewport {
     width: 100%;
     cursor: grab;
     user-select: none;
+    touch-action: pan-y;
 }
 
 .projects-carousel-viewport:active {
