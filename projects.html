@@ -190,9 +190,33 @@
                         track.style.transform = 'translateX(' + translateX + 'px)';
                     }
         
+                    var touchStartX = 0;
+                    var touchStartTranslate = 0;
+                    function onTouchStart(e) {
+                        if (!e.touches.length) return;
+                        touchStartX = e.touches[0].clientX;
+                        touchStartTranslate = translateX;
+                    }
+                    function onTouchMove(e) {
+                        if (!e.touches.length || maxScroll <= 0) return;
+                        var x = e.touches[0].clientX;
+                        var delta = x - touchStartX;
+                        translateX = Math.min(0, Math.max(-maxScroll, touchStartTranslate - delta));
+                        track.style.transform = 'translateX(' + translateX + 'px)';
+                        if (Math.abs(delta) > 5) e.preventDefault();
+                    }
+                    function onTouchEnd() {
+                        touchStartX = 0;
+                        touchStartTranslate = translateX;
+                    }
+        
                     window.addEventListener('resize', updateMaxScroll);
                     updateMaxScroll();
                     viewport.addEventListener('wheel', onWheel, { passive: false, capture: true });
+                    viewport.addEventListener('touchstart', onTouchStart, { passive: true });
+                    viewport.addEventListener('touchmove', onTouchMove, { passive: false });
+                    viewport.addEventListener('touchend', onTouchEnd, { passive: true });
+                    viewport.addEventListener('touchcancel', onTouchEnd, { passive: true });
         
                     track.style.transform = 'translateX(0)';
                 }
